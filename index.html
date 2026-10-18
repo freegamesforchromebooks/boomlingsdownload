@@ -3,134 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RobTop Games - Download Games</title>
+    <title>RobTop Games</title>
     <style>
         body {
-            background-color: #1a1a1a;
+            background-color: #121212;
             color: #ffffff;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
         }
+
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            width: 800px;
+            margin: 50px auto;
+            background-color: #1e1e1e;
+            border: 2px solid #e5c158;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.7);
         }
+
         h1 {
-            color: #2ecc71;
-            font-size: 3rem;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            color: #e5c158;
+            font-size: 36px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
         }
-        .subtitle {
-            color: #888;
-            font-size: 1.2rem;
+
+        .status {
+            color: #888888;
+            font-size: 16px;
+            margin-top: 0;
             margin-bottom: 40px;
         }
-        .games-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 30px;
-            margin-top: 20px;
+
+        .game-section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px dashed #444444;
         }
-        .game-card {
-            background-color: #262626;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transition: transform 0.2s;
+
+        .game-section:last-of-type {
+            border-bottom: none;
         }
-        .game-card:hover {
-            transform: translateY(-5px);
-        }
-        .game-icon {
-            width: 80px;
-            height: 80px;
-            background-color: #333;
-            border-radius: 18px;
-            margin: 0 auto 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-        }
+
         .game-title {
-            font-size: 1.4rem;
-            font-weight: bold;
+            color: #e5c158;
+            font-size: 24px;
             margin-bottom: 15px;
         }
-        .download-btn {
+
+        .store-links {
+            margin-top: 15px;
+        }
+
+        .store-links a {
             display: inline-block;
-            background-color: #2ecc71;
-            color: #ffffff;
+            background-color: #2a2a2a;
+            color: #e5c158;
             text-decoration: none;
             padding: 10px 20px;
-            border-radius: 6px;
+            margin: 0 8px;
+            border: 1px solid #e5c158;
+            border-radius: 5px;
             font-weight: bold;
-            transition: background-color 0.2s;
+            font-size: 14px;
         }
-        .download-btn:hover {
-            background-color: #27ae60;
+
+        .store-links a:hover {
+            background-color: #e5c158;
+            color: #121212;
         }
-        .footer {
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #333;
-            color: #555;
-            font-size: 0.9rem;
+
+        .social-links {
+            margin: 40px 0 20px 0;
         }
-        .footer-links a {
-            color: #888;
+
+        .social-links a {
+            color: #ffffff;
             text-decoration: none;
             margin: 0 10px;
+            font-size: 14px;
         }
-        .footer-links a:hover {
-            color: #2ecc71;
+
+        .social-links a:hover {
+            color: #e5c158;
+            text-decoration: underline;
+        }
+
+        .footer {
+            color: #666666;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #666666;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #e5c158;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1>RobTop Games</h1>
-        <div class="subtitle">Download Classic Games</div>
-        
-        <div class="games-grid">
-            <!-- Boomlings -->
-            <div class="game-card">
-                <div class="game-icon">💥</div>
-                <div class="game-title">Boomlings</div>
-                <a href="#" class="download-btn">Download</a>
-            </div>
-            
-            <!-- Boomlings MatchUp -->
-            <div class="game-card">
-                <div class="game-icon">🧩</div>
-                <div class="game-title">Boomlings MatchUp</div>
-                <a href="#" class="download-btn">Download</a>
-            </div>
-            
-            <!-- Memory Mastermind -->
-            <div class="game-card">
-                <div class="game-icon">🧠</div>
-                <div class="game-title">Memory Mastermind</div>
-                <a href="#" class="download-btn">Download</a>
+        <p class="status">Under Construction</p>
+
+        <!-- Boomlings Section -->
+        <div class="game-section">
+            <div class="game-title">Boomlings</div>
+            <div class="store-links">
+                <a href="#">App Store</a>
+                <a href="#">Google Play</a>
             </div>
         </div>
 
-        <div class="footer">
-            <div class="footer-links" style="margin-bottom: 15px;">
-                <a href="#">YouTube</a>
-                <a href="#">Twitter</a>
-                <a href="#">Facebook</a>
-                <a href="#">Discord</a>
-                <a href="#">Reddit</a>
-                <a href="#">Twitch</a>
+        <!-- Boomlings MatchUp Section -->
+        <div class="game-section">
+            <div class="game-title">Boomlings MatchUp</div>
+            <div class="store-links">
+                <a href="#">App Store</a>
+                <a href="#">Google Play</a>
             </div>
-            <p>Terms of Service | Video Policy | GeometryDash.com</p>
+        </div>
+
+        <!-- Memory Mastermind Section -->
+        <div class="game-section">
+            <div class="game-title">Memory Mastermind</div>
+            <div class="store-links">
+                <a href="#">App Store</a>
+                <a href="#">Google Play</a>
+            </div>
+        </div>
+
+        <!-- Social Media Navigation Links -->
+        <div class="social-links">
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://discord.gg" target="_blank">Discord</a>
+            <a href="https://www.reddit.com/r/geometrydash/" target="_blank">Reddit</a>
+            <a href="https://twitch.tv" target="_blank">Twitch</a>
+        </div>
+
+        <!-- Contact Options -->
+        <div class="store-links" style="margin-bottom: 40px;">
+            <a href="mailto:support@robtopgames.com">Letter Contact</a>
+        </div>
+
+        <!-- Legal and Site Footer -->
+        <div class="footer">
+            <a href="#">Terms of Service</a> | <a href="#">Video Policy</a> | <a href="http://geometrydash.com" target="_blank">GeometryDash.com</a>
         </div>
     </div>
+
 </body>
 </html>
